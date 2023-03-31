@@ -186,6 +186,7 @@ body.lock {
 }
 
 .header {
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -213,6 +214,47 @@ body.lock {
 
 /*---------------------------ОСТАЛЬНЫЕ КЛАССЫ---------------------------------------*/
 /*---------------------------HEADER-------------------------------------------------*/
+.header__punkt {
+  z-index: 55;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__punkt-profile {}
+
+.punkts {}
+
+.header__punkt-group1 {}
+
+.header__punkt-group1-founder {}
+
+.header__punkt-group1-news {}
+
+.header__punkt-group1-about {}
+
+.header__punkt-group1-recomended {}
+
+.header__punkt-group1-fac {}
+
+.header__punkt-group2 {}
+
+.header__punkt-group2-price {}
+
+.header__punkt-group2-pay {}
+
+.header__punkt-group2-pay-obort {}
+
+.header__punkt-group1-band {}
+
+.header__punkt-group3 {}
+
+.header__punkt-group3-user-agriment {}
+
+.header__punkt-group3-protect {}
+
+.header__punkt-exit {}
+
 .header__burger {
   display: none;
   position: relative;
@@ -364,7 +406,7 @@ $red-color: #ff4460;
 .revolutionary__dating-image-fone1 {
   z-index: 2;
   position: absolute;
-  top: -32px;
+  top: 132px;
   right: 104px;
 }
 
@@ -380,6 +422,7 @@ $red-color: #ff4460;
   z-index: 1;
 
   .revolutionary-dating__block {
+    padding-top: 210px;
     z-index: 5;
     display: flex;
   }
@@ -542,6 +585,8 @@ $red-color: #ff4460;
       }
 
       button {
+        width: 260px;
+        height: 50px;
         font-size: 16px;
         line-height: 20px;
         max-width: 180px;
@@ -759,7 +804,7 @@ $red-color: #ff4460;
 .activated__backround img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: auto;
 }
 
 .activated__block {
@@ -858,6 +903,14 @@ $red-color: #ff4460;
   height: 900px;
   position: relative;
   display: flex;
+
+}
+
+@media (max-width: 1640px) {
+  .economy__block {
+    justify-content: space-around;
+  }
+
 }
 
 .economy__main {
@@ -1065,4 +1118,59 @@ $red-color: #ff4460;
   max-width: 466px;
   color: white;
   margin-bottom: 36px;
+}
+
+@media (max-width: 425px) {
+  .revolutionary-dating .revolutionary-dating__block {
+    padding-top: 45px;
+  }
+
+  .search__fone {
+    height: 100%;
+    background: url(/img/xxx.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .search__title {
+    padding-top: 90px;
+    max-width: 263px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .search__info {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .revolutionary-dating__main-button-try button {
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.footer__content {
+  font-weight: 300;
+  color: #B3BACF;
+  font-size: 14px;
+  line-height: 20px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 15px;
+}
+
+@media (max-width: 425px) {
+  .footer__content {
+    padding-top: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 }

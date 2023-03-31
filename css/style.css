@@ -184,6 +184,7 @@ body.lock {
 }
 
 .header {
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -209,6 +210,13 @@ body.lock {
 }
 /*---------------------------ОСТАЛЬНЫЕ КЛАССЫ---------------------------------------*/
 /*---------------------------HEADER-------------------------------------------------*/
+.header__punkt {
+  z-index: 55;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .header__burger {
   display: none;
   position: relative;
@@ -394,7 +402,7 @@ body.lock {
 .revolutionary__dating-image-fone1 {
   z-index: 2;
   position: absolute;
-  top: -32px;
+  top: 132px;
   right: 104px;
 }
 
@@ -410,6 +418,7 @@ body.lock {
   z-index: 1;
 }
 .revolutionary-dating .revolutionary-dating__block {
+  padding-top: 210px;
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,6 +566,8 @@ body.lock {
     max-width: 121px;
   }
   .revolutionary-dating .revolutionary-dating__main-button-try button {
+    width: 260px;
+    height: 50px;
     font-size: 16px;
     line-height: 20px;
     max-width: 180px;
@@ -754,7 +765,7 @@ body.lock {
 .activated__backround img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: auto;
 }
 
 .activated__block {
@@ -852,6 +863,12 @@ body.lock {
   display: flex;
 }
 
+@media (max-width: 1640px) {
+  .economy__block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .economy__main {
   width: 50%;
 }
@@ -1083,4 +1100,64 @@ body.lock {
   max-width: 466px;
   color: white;
   margin-bottom: 36px;
+}
+
+@media (max-width: 425px) {
+  .revolutionary-dating .revolutionary-dating__block {
+    padding-top: 45px;
+  }
+  .search__fone {
+    height: 100%;
+    background: url(/img/xxx.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .search__title {
+    padding-top: 90px;
+    max-width: 263px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .search__info {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .revolutionary-dating__main-button-try button {
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.footer__content {
+  font-weight: 300;
+  color: #B3BACF;
+  font-size: 14px;
+  line-height: 20px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+  gap: 15px;
+}
+
+@media (max-width: 425px) {
+  .footer__content {
+    padding-top: 0;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
 }
