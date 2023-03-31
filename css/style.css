@@ -211,10 +211,59 @@ body.lock {
 /*---------------------------ОСТАЛЬНЫЕ КЛАССЫ---------------------------------------*/
 /*---------------------------HEADER-------------------------------------------------*/
 .header__punkt {
+  padding: 15px;
+  background: white;
   z-index: 55;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.header__punkt-profile {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
+
+.punkts {
+  padding: 15px 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.header__punkt-group1 {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
+
+.header__punkt-group2 {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
+
+.header__punkt-band {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
+
+.header__punkt-group3 {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
+
+.header__punkt-exit {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
 }
 
 .header__burger {

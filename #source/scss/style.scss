@@ -215,17 +215,32 @@ body.lock {
 /*---------------------------ОСТАЛЬНЫЕ КЛАССЫ---------------------------------------*/
 /*---------------------------HEADER-------------------------------------------------*/
 .header__punkt {
+  padding: 15px;
+  background: white;
   z-index: 55;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
-.header__punkt-profile {}
+.header__punkt-profile {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
 
-.punkts {}
+.punkts {
+  padding: 15px 19px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-.header__punkt-group1 {}
+.header__punkt-group1 {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
 
 .header__punkt-group1-founder {}
 
@@ -237,7 +252,11 @@ body.lock {
 
 .header__punkt-group1-fac {}
 
-.header__punkt-group2 {}
+.header__punkt-group2 {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
 
 .header__punkt-group2-price {}
 
@@ -245,15 +264,27 @@ body.lock {
 
 .header__punkt-group2-pay-obort {}
 
-.header__punkt-group1-band {}
+.header__punkt-band {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
 
-.header__punkt-group3 {}
+.header__punkt-group3 {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
 
 .header__punkt-group3-user-agriment {}
 
 .header__punkt-group3-protect {}
 
-.header__punkt-exit {}
+.header__punkt-exit {
+  margin-bottom: 15px;
+  background: #FAFBFC;
+  border-radius: 12px;
+}
 
 .header__burger {
   display: none;
