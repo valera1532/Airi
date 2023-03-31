@@ -332,7 +332,7 @@ body.lock {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #04242B;
+  color: #04242b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,7 +360,7 @@ body.lock {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #04242B;
+  color: #04242b;
 }
 .header__content .header__burger {
   display: -webkit-box;
@@ -378,7 +378,7 @@ body.lock {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #04242B;
+  color: #04242b;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,8 +425,8 @@ body.lock {
   line-height: 50px;
 }
 .revolutionary-dating .revolutionary-dating__main-title span {
-  background: -o-linear-gradient(346.37deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-  background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -435,7 +435,7 @@ body.lock {
 .revolutionary-dating .revolutionary-dating__main-sub-title {
   max-width: 466px;
   margin-bottom: 36px;
-  color: #04242B;
+  color: #04242b;
 }
 .revolutionary-dating .revolutionary-dating__main-butons {
   display: -webkit-box;
@@ -448,7 +448,7 @@ body.lock {
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  background-color: #FAFBFC;
+  background-color: #fafbfc;
   border-radius: 12px;
   width: 260px;
   height: 50px;
@@ -461,7 +461,7 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #04242B;
+  color: #04242b;
 }
 .revolutionary-dating .revolutionary__dating-image {
   margin-left: 100px;
@@ -487,7 +487,7 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FF4460;
+  background-color: #ff4460;
 }
 
 @media (max-width: 777px) {
@@ -597,8 +597,8 @@ body.lock {
   font-family: DrukWideCyr-Bold;
 }
 .find__title span {
-  background: -o-linear-gradient(346.37deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-  background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -622,6 +622,12 @@ body.lock {
 }
 
 @media (max-width: 777px) {
+  .revolutionary-dating .revolutionary-dating__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .find__block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -663,9 +669,9 @@ body.lock {
   }
   .find__image2 {
     left: 50%;
-    -webkit-transform: translateX(-60.4%);
-        -ms-transform: translateX(-60.4%);
-            transform: translateX(-60.4%);
+    -webkit-transform: translateX(-58.4%);
+        -ms-transform: translateX(-58.4%);
+            transform: translateX(-58.4%);
     width: 100%;
     top: 40px;
     opacity: 70%;
@@ -689,8 +695,8 @@ body.lock {
 }
 
 .manual__title span {
-  background: -o-linear-gradient(346.37deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-  background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -708,6 +714,28 @@ body.lock {
   bottom: 0px;
 }
 
+@media (max-width: 425px) {
+  .manual {
+    height: 680px;
+  }
+  .manual__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .manual__info {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .button__none {
+    display: none;
+  }
+  .manual__image {
+    right: -155px;
+  }
+  .manual__image img {
+    max-width: 272px;
+  }
+}
 .activated {
   height: 900px;
   position: relative;
@@ -720,7 +748,7 @@ body.lock {
   width: 50vw;
   height: 100%;
   left: 50%;
-  background: #EDE6A7;
+  background: #ede6a7;
 }
 
 .activated__backround img {
@@ -750,8 +778,8 @@ body.lock {
 }
 
 .activated__main-title span {
-  background: -o-linear-gradient(346.37deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-  background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -778,6 +806,40 @@ body.lock {
   line-height: 50px;
 }
 
+@media (max-width: 425px) {
+  .activated__main-title {
+    margin-top: 51px;
+    position: absolute;
+    z-index: 6;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .activated__backround img {
+    max-width: 812px;
+    left: 50%;
+    -webkit-transform: translateX(-54.4%);
+        -ms-transform: translateX(-54.4%);
+            transform: translateX(-54.4%);
+  }
+  .activated {
+    height: 680px;
+  }
+  .activated__backround {
+    height: 680px;
+    width: 150%;
+    -webkit-transform: translateX(-34.4%);
+        -ms-transform: translateX(-34.4%);
+            transform: translateX(-34.4%);
+  }
+  .activated__creative-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 0;
+    max-width: 227px;
+    margin-top: 93px;
+    margin-left: 22px;
+  }
+}
 .economy {
   background: url(/img/economy.webp) no-repeat;
 }
@@ -806,8 +868,8 @@ body.lock {
 }
 
 .economy__main-title span {
-  background: -o-linear-gradient(346.37deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-  background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -833,8 +895,8 @@ body.lock {
 
 .economy__content-sub-title {
   margin-top: 2px;
-  background: -o-linear-gradient(346.37deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
-  background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -873,6 +935,18 @@ body.lock {
   margin-top: 30px;
 }
 
+.economy__content-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
 .economy__content-price-1mouth {
   padding: 0 15px;
   height: 50px;
@@ -887,7 +961,7 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FAFBFC;
+  background: #fafbfc;
 }
 
 .economy__content-price-title {
@@ -903,7 +977,11 @@ body.lock {
 }
 
 .economy__content-price-6mouth {
-  border: 2px solid red;
+  -o-border-image: -o-linear-gradient(left, #ff4460, #ad00ff, #31ceff) 30;
+     border-image: -webkit-gradient(linear, left top, right top, from(#ff4460), color-stop(#ad00ff), to(#31ceff)) 30;
+     border-image: linear-gradient(90deg, #ff4460, #ad00ff, #31ceff) 30;
+  border-width: 2px;
+  border-style: solid;
   padding: 0 15px;
   height: 70px;
   border-radius: 12px;
@@ -917,7 +995,7 @@ body.lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 370px;
-  background: #FAFBFC;
+  background: #fafbfc;
 }
 
 .economy__content-price-info {
@@ -929,7 +1007,7 @@ body.lock {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #919AB6;
+  color: #919ab6;
 }
 
 .economy__content-price-1year {
@@ -946,5 +1024,63 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 370px;
-  background: #FAFBFC;
+  background: #fafbfc;
+}
+
+.economy__content-price-cost-fake {
+  color: #ff4460;
+  text-decoration: line-through;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+}
+
+.economy__content-choice button {
+  width: 370px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  background: #ff4460;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.search {
+  height: 900px;
+  background: -o-linear-gradient(348.41deg, #000000 0.72%, #424247 99.58%);
+  background: linear-gradient(101.59deg, #000000 0.72%, #424247 99.58%);
+}
+
+.search__fone {
+  height: 100%;
+  background: url(/img/search__fone.webp);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.search__title {
+  padding-top: 144px;
+  max-width: 545px;
+  font-family: DrukWideCyr-Bold;
+  color: white;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.search__title span {
+  background: -o-linear-gradient(346.37deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  background: linear-gradient(103.63deg, #ff4460 1.93%, #ad00ff 54.03%, #31ceff 92.85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.search__info {
+  margin-top: 59px;
+  max-width: 466px;
+  color: white;
+  margin-bottom: 36px;
 }
