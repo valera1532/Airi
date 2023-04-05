@@ -5,22 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/ico" sizes="32x32" href="">
-   <link rel="icon" type="image/ico" sizes="16x16" href="">
-   <link rel="shortcut icon" href="">
-   <link rel="apple-touch-icon" sizes="180x180" href="">
-   <link rel="mask-icon" href="">
-   <link rel="mask-icon" href="">
-   <link rel="manifest" href="/manifest.json">
-
    <link rel="stylesheet" href="/css/style.css">
    <title>AI TXT</title>
 </head>
 
-<body class="theme">
+<body class="scroll">
 
    <div class="wrapper">
-<header class="header" id="header">
+<header class="header">
     <div class="_container">
         <div class="header__content">
             <div class="header__logo"><img src="./img/logo.svg" alt=""></div>
@@ -33,7 +25,8 @@
                 </div>
                 <div class="header__registrations"><button>Регистрация</button></div>
                 <div class="header__burger">
-                    <button><img src="./img/icons/burger__menu.svg" alt=""><span>Меню</span></button>
+                    <!-- <button><img src="./img/icons/burger__menu.svg" alt=""><span>Меню</span></button> -->
+                    <span></span>
                 </div>
                 <div class="header-burger__block">
                     <div class="header__punkt">
@@ -111,7 +104,6 @@
                                 </button>
                             </div>
                         </div>
-
                         <div class="header__punkt-group3">
                             <div class="header__punkt-group3-user-agriment punkts">
                                 <button>
@@ -134,7 +126,6 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -281,12 +272,9 @@
             </div>
         </div>
     </div>
-    </div>
-
-    </div>
 </header><main class="main">
     <!-- Это старница начальная, сзади должны пропадать крудки и появлять где-то в рандомном месте  -->
-    <section class="revolutionary-dating">
+    <section class="revolutionary-dating slide slide1" data-slide-number="1">
         <div class="revolutionary__dating-image-fone1"><img
                 src="./img/revolutionary-dating/revolutionary-dating-decor-fone1.webp" alt=""></div>
         <div class="revolutionary__dating-image-fone2"><img
@@ -320,9 +308,8 @@
             </div>
         </div>
     </section>
-    <section></section>
     <!-- Это старница с лицом, сзади тип должен пропадать через 4 секунды и должна оставаться одна маска  -->
-    <section class="find">
+    <section class="find slide" data-slide-number="2">
         <div class="_container">
             <div class="find__block">
                 <div class="find__main">
@@ -341,8 +328,8 @@
                     </div>
                 </div>
                 <div class="find__image">
-                    <div class="find__image1"><img src="./img/find/fone1.webp" alt="">
-                        <div class="find__image2"><img src="./img/find/fone2.webp" alt=""></div>
+                    <div class="find__image1"><img src="./img/find/2.webp" alt="">
+                        <div class="find__image2"><img src="./img/find/1.webp" alt=""></div>
                     </div>
 
                 </div>
@@ -350,7 +337,7 @@
         </div>
     </section>
     <!-- Ооо, вот это один из главных пиздецов, нужно что бы телефон вылетал из края экрана и за ним появлялись различные декоративные элементы  -->
-    <section class="manual">
+    <section class="manual slide" data-slide-number="3">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
@@ -363,13 +350,15 @@
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="manual__image">
+                    <div class="manual__image1 manual__image-phone">
+                        <img src="./img/manual/phone2.webp" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="manual__image1 manual__image-phone">
-            <img src="./img/manual/phone2.webp" alt="">
-        </div>
     </section>
-    <section class="manual">
+    <!--     <section class="manual">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
@@ -470,9 +459,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Это старницы с мероприятиями их 4, адаптив у них полностью сделан, нужно лишь добавить в адаптиве в конце блок текстом  -->
-    <section class="activated">
+    <section class="activated slide" data-slide-number="4">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -481,18 +470,22 @@
                         на разные мероприятия по выбранным интересам: на
                         концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и
                         многое другое</div>
-                    <div class="revolutionary-dating__main-button-try">
+                    <div class="revolutionary-dating__main-button-try two">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="activated__img">
+                    <div class="activated__main-title lock">Больше <span>активности</span></div>
+                    <div class="activated__creative-title">Творческие мероприятия</div>
+                    <img src="/img/actived/actived.webp" alt="">
+                </div>
             </div>
         </div>
-        <div class="activated__backround">
-            <div class="activated__creative-title">Творческие мероприятия</div>
-            <img src="/img/actived/actived.webp" alt="">
+        <div class="activated__back">
+
         </div>
     </section>
-    <section class="activated">
+    <!--     <section class="activated">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -536,7 +529,6 @@
             <img src="/img/actived/actived3.webp" alt="">
         </div>
     </section>
-
     <section class="activated">
         <div class="_container">
             <div class="activated__block">
@@ -557,9 +549,9 @@
                 вечера</div>
             <img src="/img/actived/actived4.webp" alt="">
         </div>
-    </section>
+    </section> -->
     <!-- Это страница с прайсами тут нужно доработать border-radius и разделить на 3 блока при адаптиве -->
-    <section class="economy">
+    <section class="economy slide" data-slide-number="5">
         <div class="_container">
             <div class="economy__block">
                 <div class="economy__main">
@@ -568,18 +560,25 @@
                     </div>
                 </div>
                 <div class="economy__content">
-                    <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
-                    <div class="economy__content-sub-title">Сэкономьте до 30% <br>
-                        при переходе на этот тариф</div>
-                    <div class="economy__content-punkt">
-                        <ul>
-                            <li><img src="/img/icons/chek.webp" alt="">Пробный период 1 месяц бесплатно</li>
-                            <li><img src="/img/icons/chek.webp" alt="">Находите людей со 100% совместимостью</li>
-                            <li><img src="/img/icons/chek.webp" alt="">Запретите видеться себя геолокации</li>
-                            <li><img src="/img/icons/chek.webp" alt="">Скройтесь ото всех</li>
-                        </ul>
+                    <div class="economy__body">
+                        <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
+                        <div class="economy__content-sub-title">Сэкономьте до 30% <br>
+                            при переходе на этот тариф</div>
+                        <div class="economy__content-punkt">
+                            <ul>
+                                <li><img src="/img/icons/chek.webp" alt="">Пробный период 1 месяц бесплатно</li>
+                                <li><img src="/img/icons/chek.webp" alt="">Находите людей со 100% совместимостью</li>
+                                <li><img src="/img/icons/chek.webp" alt="">Запретите видеться себя геолокации</li>
+                                <li><img src="/img/icons/chek.webp" alt="">Скройтесь ото всех</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="economy__content-price">
+                        <div class="economy__mobile-title">
+                            <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
+                            <div class="economy__content-sub-title">Сэкономьте до 30% <br>
+                                при переходе на этот тариф</div>
+                        </div>
                         <div class="economy__content-price-1mouth">
                             <div class="economy__content-price-title">1 месяц</div>
                             <div class="economy__content-price-cost">700 ₽</div>
@@ -608,26 +607,30 @@
                 </div>
             </div>
         </div>
+        <div class="economy__back">
+            <img src="./img/economy.webp" alt="">
+        </div>
     </section>
     <!-- Это последний блок с ним ничего делать не нужно -->
-    <section class="search">
-        <div class="search__fone">
-            <div class="_container">
-                <div class="search__block">
-                    <div class="search__title">
-                        Найдите свою <span>пару</span>
-                    </div>
-                    <div class="search__info">А если вам не понравится первая встреча, вы всегда можете найти для себя
-                        нового знакомого.</div>
-                    <div class="revolutionary-dating__main-button-try ">
-                        <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
-                    </div>
+    <section class="search slide" data-slide-number="6">
+        <div class="_container">
+            <div class="search__block">
+                <div class="search__title">
+                    Найдите свою <span>пару</span>
+                </div>
+                <div class="search__info">А если вам не понравится первая встреча, вы всегда можете найти для себя
+                    нового знакомого.</div>
+                <div class="revolutionary-dating__main-button-try search-btn">
+                    <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                 </div>
             </div>
         </div>
+        <div class="search__img">
+            <img src="/img/search__fone.webp" alt="">
+        </div>
     </section>
     <!-- Это попапы для бургер меню -->
-    <section class="founder pup-up__menu">
+    <!--     <section class="founder pup-up__menu">
         <div class="founder__block">
             <div class="founder__image">
                 <img src="/img/header__points/founder-main.webp" alt="">
@@ -820,7 +823,7 @@
                     С уважением, Маринэ Багдасарян.</div>
             </div>
         </div>
-    </section>
+    </section> -->
 </main><footer class="footer theme">
     <div class="_container">
         <div class="footer__content">
@@ -830,6 +833,10 @@
         </div>
     </div>
 </footer>   </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
    <script src="/js/script-main.js"></script>
    <script src="/js/script.js"></script>
 

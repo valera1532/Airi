@@ -1,1 +1,64 @@
-const THEME_ELEMENTS=document.querySelectorAll(".theme"),THEME_BTN=document.querySelector(".header__theme");document.addEventListener("DOMContentLoaded",(()=>{if("dark"===document.cookie.replace(/(?:(?:^|.*;\s*)theme\s*\=\s*([^;]*).*$)|^.*$/,"$1"))for(let e=0;e<THEME_ELEMENTS.length;e++)THEME_ELEMENTS[e].classList.add("dark")})),document.querySelector(".header__burger").addEventListener("click",(function(){document.querySelector(".header__burger").classList.toggle("active"),document.querySelector(".header-burger__block").classList.toggle("active"),document.querySelector("body").classList.toggle("lock")}));for(let e=0;e<THEME_ELEMENTS.length;e++)THEME_BTN.addEventListener("click",(()=>{THEME_ELEMENTS[e].classList.toggle("dark"),THEME_ELEMENTS[e].classList.contains("dark")?document.cookie="theme=dark":document.cookie="theme="}));let userImgs=document.querySelectorAll(".header-user-img"),userList=document.querySelector(".header-user__block");for(let e=0;e<userImgs.length;e++)userImgs[e].addEventListener("click",(()=>{userList.classList.toggle("active"),document.querySelector(".header-user__shadow").classList.toggle("active"),document.querySelector("body").classList.toggle("lock")}));let userIcon=document.querySelector(".header__user");document.addEventListener("click",(e=>{e.composedPath().includes(userIcon)||(userList.classList.remove("active"),document.querySelector(".header-user__shadow").classList.remove("active"),document.querySelector("body").classList.remove("lock"))})),document.querySelector(".header-user__close").addEventListener("click",(()=>{userList.classList.remove("active"),document.querySelector(".header-user__shadow").classList.remove("active"),document.querySelector("body").classList.remove("lock")}));
+document.querySelector('.header__burger').addEventListener('click', function () {
+    document.querySelector('.header__burger').classList.toggle('active');
+    document.querySelector('.header-burger__block').classList.toggle('active');
+});
+// ждем, пока страница полностью загрузится
+/* document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollToPlugin);
+
+    const slides = gsap.utils.toArray(".slide");
+    let currentSlide = 1;
+    function changeSlide(slideNumber) {
+        console.log(slideNumber);
+        currentSlide = slideNumber;
+        if (currentSlide === 1) {
+            gsap.to(".header__registrations", { color: "#fff" });
+            gsap.to(".slide", { color: "#fff" });
+        } else if (currentSlide === 2) {
+        } else if (currentSlide === 3) {
+        }
+        gsap.to(window, {
+            duration: 1,
+            ease: "power4.inOut",
+            scrollTo: { y: window.innerHeight * (currentSlide - 1) }
+        });
+
+    } */
+    // устанавливаем начальные значения для каждого слайда
+/*     gsap.set(slides, { yPercent: -100 });
+    gsap.set(".slide1", { yPercent: 0 }); */
+/* 
+    slides.forEach((slide, index) => {
+        ScrollTrigger.create({
+            trigger: slide,
+            start: "top top",
+            end: "bottom bottom",
+            onEnter: () => {
+                changeSlide(index + 1);
+            },
+        });
+    });
+
+    ScrollTrigger.create({
+        trigger: '.scroll',
+        start: 'top top',
+        end: 'bottom bottom',
+        onLeave: (index, direction) => {
+            if (direction === 1) {
+                currentSlide++;
+                if (currentSlide > 6) {
+                    currentSlide = 6;
+                } else {
+                    changeSlide(currentSlide);
+                }
+            } else {
+                currentSlide--;
+                if (currentSlide < 1) {
+                    currentSlide = 1;
+                } else {
+                    changeSlide(currentSlide);
+                }
+            }
+        },
+    });
+}); */

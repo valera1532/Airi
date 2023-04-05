@@ -1,6 +1,6 @@
 <main class="main">
     <!-- Это старница начальная, сзади должны пропадать крудки и появлять где-то в рандомном месте  -->
-    <section class="revolutionary-dating">
+    <section class="revolutionary-dating slide slide1" data-slide-number="1">
         <div class="revolutionary__dating-image-fone1"><img
                 src="./img/revolutionary-dating/revolutionary-dating-decor-fone1.webp" alt=""></div>
         <div class="revolutionary__dating-image-fone2"><img
@@ -34,9 +34,8 @@
             </div>
         </div>
     </section>
-    <section></section>
     <!-- Это старница с лицом, сзади тип должен пропадать через 4 секунды и должна оставаться одна маска  -->
-    <section class="find">
+    <section class="find slide" data-slide-number="2">
         <div class="_container">
             <div class="find__block">
                 <div class="find__main">
@@ -55,8 +54,8 @@
                     </div>
                 </div>
                 <div class="find__image">
-                    <div class="find__image1"><img src="./img/find/fone1.webp" alt="">
-                        <div class="find__image2"><img src="./img/find/fone2.webp" alt=""></div>
+                    <div class="find__image1"><img src="./img/find/2.webp" alt="">
+                        <div class="find__image2"><img src="./img/find/1.webp" alt=""></div>
                     </div>
 
                 </div>
@@ -64,7 +63,7 @@
         </div>
     </section>
     <!-- Ооо, вот это один из главных пиздецов, нужно что бы телефон вылетал из края экрана и за ним появлялись различные декоративные элементы  -->
-    <section class="manual">
+    <section class="manual slide" data-slide-number="3">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
@@ -77,13 +76,15 @@
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="manual__image">
+                    <div class="manual__image1 manual__image-phone">
+                        <img src="./img/manual/phone2.webp" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="manual__image1 manual__image-phone">
-            <img src="./img/manual/phone2.webp" alt="">
-        </div>
     </section>
-    <section class="manual">
+    <!--     <section class="manual">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
@@ -184,9 +185,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Это старницы с мероприятиями их 4, адаптив у них полностью сделан, нужно лишь добавить в адаптиве в конце блок текстом  -->
-    <section class="activated">
+    <section class="activated slide" data-slide-number="4">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -195,18 +196,22 @@
                         на разные мероприятия по выбранным интересам: на
                         концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и
                         многое другое</div>
-                    <div class="revolutionary-dating__main-button-try">
+                    <div class="revolutionary-dating__main-button-try two">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="activated__img">
+                    <div class="activated__main-title lock">Больше <span>активности</span></div>
+                    <div class="activated__creative-title">Творческие мероприятия</div>
+                    <img src="/img/actived/actived.webp" alt="">
+                </div>
             </div>
         </div>
-        <div class="activated__backround">
-            <div class="activated__creative-title">Творческие мероприятия</div>
-            <img src="/img/actived/actived.webp" alt="">
+        <div class="activated__back">
+
         </div>
     </section>
-    <section class="activated">
+    <!--     <section class="activated">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -250,7 +255,6 @@
             <img src="/img/actived/actived3.webp" alt="">
         </div>
     </section>
-
     <section class="activated">
         <div class="_container">
             <div class="activated__block">
@@ -271,9 +275,9 @@
                 вечера</div>
             <img src="/img/actived/actived4.webp" alt="">
         </div>
-    </section>
+    </section> -->
     <!-- Это страница с прайсами тут нужно доработать border-radius и разделить на 3 блока при адаптиве -->
-    <section class="economy">
+    <section class="economy slide" data-slide-number="5">
         <div class="_container">
             <div class="economy__block">
                 <div class="economy__main">
@@ -282,18 +286,25 @@
                     </div>
                 </div>
                 <div class="economy__content">
-                    <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
-                    <div class="economy__content-sub-title">Сэкономьте до 30% <br>
-                        при переходе на этот тариф</div>
-                    <div class="economy__content-punkt">
-                        <ul>
-                            <li><img src="/img/icons/chek.webp" alt="">Пробный период 1 месяц бесплатно</li>
-                            <li><img src="/img/icons/chek.webp" alt="">Находите людей со 100% совместимостью</li>
-                            <li><img src="/img/icons/chek.webp" alt="">Запретите видеться себя геолокации</li>
-                            <li><img src="/img/icons/chek.webp" alt="">Скройтесь ото всех</li>
-                        </ul>
+                    <div class="economy__body">
+                        <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
+                        <div class="economy__content-sub-title">Сэкономьте до 30% <br>
+                            при переходе на этот тариф</div>
+                        <div class="economy__content-punkt">
+                            <ul>
+                                <li><img src="/img/icons/chek.webp" alt="">Пробный период 1 месяц бесплатно</li>
+                                <li><img src="/img/icons/chek.webp" alt="">Находите людей со 100% совместимостью</li>
+                                <li><img src="/img/icons/chek.webp" alt="">Запретите видеться себя геолокации</li>
+                                <li><img src="/img/icons/chek.webp" alt="">Скройтесь ото всех</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="economy__content-price">
+                        <div class="economy__mobile-title">
+                            <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
+                            <div class="economy__content-sub-title">Сэкономьте до 30% <br>
+                                при переходе на этот тариф</div>
+                        </div>
                         <div class="economy__content-price-1mouth">
                             <div class="economy__content-price-title">1 месяц</div>
                             <div class="economy__content-price-cost">700 ₽</div>
@@ -322,26 +333,30 @@
                 </div>
             </div>
         </div>
+        <div class="economy__back">
+            <img src="./img/economy.webp" alt="">
+        </div>
     </section>
     <!-- Это последний блок с ним ничего делать не нужно -->
-    <section class="search">
-        <div class="search__fone">
-            <div class="_container">
-                <div class="search__block">
-                    <div class="search__title">
-                        Найдите свою <span>пару</span>
-                    </div>
-                    <div class="search__info">А если вам не понравится первая встреча, вы всегда можете найти для себя
-                        нового знакомого.</div>
-                    <div class="revolutionary-dating__main-button-try ">
-                        <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
-                    </div>
+    <section class="search slide" data-slide-number="6">
+        <div class="_container">
+            <div class="search__block">
+                <div class="search__title">
+                    Найдите свою <span>пару</span>
+                </div>
+                <div class="search__info">А если вам не понравится первая встреча, вы всегда можете найти для себя
+                    нового знакомого.</div>
+                <div class="revolutionary-dating__main-button-try search-btn">
+                    <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                 </div>
             </div>
         </div>
+        <div class="search__img">
+            <img src="/img/search__fone.webp" alt="">
+        </div>
     </section>
     <!-- Это попапы для бургер меню -->
-    <section class="founder pup-up__menu">
+    <!--     <section class="founder pup-up__menu">
         <div class="founder__block">
             <div class="founder__image">
                 <img src="/img/header__points/founder-main.webp" alt="">
@@ -534,5 +549,191 @@
                     С уважением, Маринэ Багдасарян.</div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <!--     <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-title">Привет, это Айри</div>
+        <div class="pup-up__info-sub-title">Привет, это Айри) Мне нужно задать вам 5 вопросов, чтобы дать доступ к
+            анкетам, ок?</div><br>
+        <div class="pup-up__info-qestion">Расскажите, кто вы? </div>
+        <div class="pup-up__info-btn">
+            <div><button>Мужчина</button></div>
+            <div class="pup-up__info-line"></div>
+            <div><button>Женщина</button></div>
+        </div>
+    </div>
+    <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Кого хотите найти?</div>
+            <div class="pup-up__info-relationship"><img src="/img/icons/heart.webp" alt=""><span>Отношения</span><label
+                    class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="pup-up__info-friends"><img src="/img/icons/friend.webp" alt=""><span>Друзей</span><label
+                    class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Как вас зовут?</div>
+            <div class="pup-up__info-inp">
+                Ваше имя
+                <input type="text">
+            </div>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Когда у вас день рождения?</div>
+            <div class="pup-up__info-inp">
+                Выберите дату
+                <input type="date">
+            </div>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+
+
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Важные документы</div>
+            <div class="pup-up__info-main">Нажимая «Продолжить» вы соглашаетесь на обработку персональных
+                данных, а также принимаете пользовательское соглашение:</div>
+            <div class="header__punkt-group3">
+                <div class="header__punkt-group3-user-agriment punkts">
+                    <button>
+                        <div class="header__punkt-content">
+                            <img src="/img/icons/user-agriment.webp" alt="">Пользовательское соглашение
+                        </div>
+                        <div class="header__punkt-arrow-right">
+                            <img src="/img/icons/arrow__right.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+                <div class="header__punkt-group3-protect punkts">
+                    <button>
+                        <div class="header__punkt-content">
+                            <img src="/img/icons/protect.webp" alt="">Обработка персональных данных
+                        </div>
+                        <div class="header__punkt-arrow-right">
+                            <img src="/img/icons/arrow__right.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <button class="pup-up__info-further">Продолжить</button>
+        </div>
+    </div>
+    <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Важные документы</div>
+            <div class="pup-up__info-main">Установите уникальный сложный пароль, используйте любую комбинацию
+                латинских букв, цифр и других символов</div>
+            <div class="pup-up__info-data">
+                <div class="pup-up__info-inp">
+                    Ваша почта
+                    <input type="email">
+                </div>
+                <div class="pup-up__info-inp">
+                    Придумайте пароль
+                    <input type="password">
+                </div>
+                <div class="pup-up__info-inp">
+                    Повторите этот пароль
+                    <input type="password">
+                </div>
+            </div>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+
+            <div class="pup-up__info-point-close"><button><img src="/img/icons/close-pup.svg" alt=""></button></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Спасибо за регистрацию!</div>
+            <div class="pup-up__info-main">Мы отправили на указанную почту
+                dencreate@gmail.com ссылкe для
+                подтверждения аккаунта, просьба
+                пройти по нему и активировать
+                аккаунт</div>
+            <button class="pup-up__info-further">Отправить ещё раз</button>
+        </div>
+    </div> -->
 </main>
