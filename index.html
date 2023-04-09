@@ -6,27 +6,48 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/style.css">
-   <title>AI TXT</title>
+   <title>Airi</title>
 </head>
 
-<body class="scroll">
-
-   <div class="wrapper">
+<body>
+   <div class="wrapper__container">
+      <div class="wrapper scroll">
 <header class="header">
     <div class="_container">
         <div class="header__content">
-            <div class="header__logo"><img src="./img/logo.svg" alt=""></div>
+            <div class="header__logo _anim-items _anim-no-hide">
+                <svg width="101" height="30" viewBox="0 0 101 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M37.5824 30H34.3162V13.9744H38.0403V24.0476L46.5263 13.9744H49.7924V30H46.0684V19.9267L37.5824 30ZM58.431 30H54.707V13.9744C55.0122 13.9744 55.8669 13.9744 57.2405 13.9438C58.6142 13.9133 59.5604 13.9133 60.0183 13.9133C65.0549 13.9133 67.1612 16.1722 67.1612 19.591C67.1612 21.2698 66.5812 22.674 65.3907 23.7424C64.2002 24.8107 62.6129 25.3602 60.5678 25.3602C59.8352 25.3602 59.1331 25.3297 58.431 25.2686V30ZM58.431 17.4847V21.7277C59.2857 21.8193 59.9573 21.8498 60.4457 21.8498C62.1245 21.8498 63.1929 21.0562 63.1929 19.591C63.1929 18.1563 62.2772 17.4237 60.4151 17.4237C59.8962 17.4237 59.2552 17.4542 58.431 17.4847ZM73.8767 30H70.6105V13.9744H74.3346V24.0476L82.8205 13.9744H86.0867V30H82.3626V19.9267L73.8767 30ZM10.2137 2.68926H5.29915V7.60379H10.2137V2.68926ZM5.29609 7.60684H0.381563V12.5214H5.29609V7.60684ZM44.5116 7.60684H39.5971V12.5214H44.5116V7.60684ZM10.2106 12.5214H5.29609V17.4359H10.2106V12.5214ZM18.3394 7.60379H23.254V2.68926H18.3394V7.60379ZM14.8291 6.79487V2.68926H18.4005L17.265 0H12.6496L7.36874 12.5214H12.4603L14.8291 6.79487ZM20.4701 7.60379H15.1587L19.185 17.4359H10.4243H5.29609L0 30H5.29915L8.4188 22.3504H21.1966L24.3162 30H29.9145L20.4701 7.60379ZM27.4786 12.5214H32.3932V7.60684H27.4786V12.5214ZM22.5641 17.4359H27.4786V12.5214H22.5641V17.4359ZM95.3968 12.5214H100.311V7.60684H95.3968V12.5214ZM88.6508 18.8889H93.5653V13.9744H88.6508V18.8889Z"
+                        fill="url(#paint0_linear_7_5648)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_7_5648" x1="1.35556" y1="1.2973" x2="75.106" y2="61.0894"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF4460" />
+                            <stop offset="0.53125" stop-color="#AD00FF" />
+                            <stop offset="0.927083" stop-color="#31CEFF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
             <div class="header__point">
-                <div class="header__sing">
+                <div class="header__sing _anim-items _anim-no-hide">
                     <button>
-                        <img src="/img/icons/lock.webp" alt="">
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.53 5.58V3.65C8.53 1.64 6.95 0 5 0C3.05 0 1.47 1.64 1.47 3.65V5.58C0.54 6.52 0 7.79 0 9.12C0 11.88 2.24 14.12 5 14.12C7.76 14.12 10 11.88 10 9.12C10 7.79 9.46 6.51 8.53 5.58ZM2.06 3.65C2.06 1.96 3.38 0.59 5 0.59C6.62 0.59 7.94 1.96 7.94 3.65V5.07C7.93 5.07 7.92 5.06 7.91 5.05C7.82 4.99 7.73 4.93 7.65 4.88C6.86 4.38 5.94 4.12 5 4.12C4.06 4.12 3.14 4.38 2.35 4.88C2.26 4.93 2.18 4.99 2.09 5.05C2.08 5.06 2.07 5.07 2.06 5.07V3.65ZM5.88 9.71V11.18H4.12V9.71C3.75 9.43 3.53 8.99 3.53 8.53C3.53 7.72 4.19 7.06 5 7.06C5.81 7.06 6.47 7.72 6.47 8.53C6.47 8.99 6.25 9.43 5.88 9.71Z"
+                                fill="#04242B" />
+                        </svg>
                         Вход
                     </button>
                 </div>
-                <div class="header__registrations"><button>Регистрация</button></div>
-                <div class="header__burger">
-                    <!-- <button><img src="./img/icons/burger__menu.svg" alt=""><span>Меню</span></button> -->
-                    <span></span>
+                <div class="header__registrations _anim-items _anim-no-hide"><button>Регистрация</button></div>
+                <div class="header__burger-body _anim-items _anim-no-hide">
+                    <div class="header__burger _anim-items _anim-no-hide">
+                        <span></span>
+                    </div>
+                    <span>Меню</span>
+
                 </div>
                 <div class="header-burger__block">
                     <div class="header__punkt">
@@ -272,63 +293,109 @@
             </div>
         </div>
     </div>
-</header><main class="main">
-    <!-- Это старница начальная, сзади должны пропадать крудки и появлять где-то в рандомном месте  -->
-    <section class="revolutionary-dating slide slide1" data-slide-number="1">
-        <div class="revolutionary__dating-image-fone1"><img
-                src="./img/revolutionary-dating/revolutionary-dating-decor-fone1.webp" alt=""></div>
-        <div class="revolutionary__dating-image-fone2"><img
-                src="./img/revolutionary-dating/revolutionary-dating-decor-fone2.webp" alt=""></div>
+</header><main class="main ">
+    <section class="revolutionary-dating slide slide1 " data-slide-number="1" id="circle-container">
         <div class="_container">
             <div class="revolutionary-dating__block">
                 <div class="revolutionary-dating__main">
-                    <div class="revolutionary-dating__main-title">Революционный
-                        способ
-                        <span>знакомств</span>
-                    </div>
-                    <div class="revolutionary-dating__main-sub-title">Искусственный интеллект бесплатно подберет
-                        для
-                        вас
-                        пару или друзей и организует встречу в безопасном месте
-                    </div>
-                    <div class="revolutionary-dating__main-butons">
-                        <div class="revolutionary-dating__main-button-try">
-                            <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg"
-                                    alt=""></button>
+                    <div class="revolutionary-dating__body">
+                        <div class="revolutionary-dating__main-title _anim-items _anim-no-hide">Революционный
+                            способ
+                            <span class="_anim-items _anim-no-hide">знакомств</span>
                         </div>
-                        <div class="revolutionary-dating__main-work-note">
-                            <button><span>Как это работает?</span> <img src="./img/icons/button-decor2.svg"
-                                    alt=""></button>
+                        <div class="revolutionary-dating__main-sub-title">
+                            <span class="_anim-items _anim-no-hide">
+                                Искусственный
+                                интеллект бесплатно
+                            </span> <span class="_anim-items _anim-no-hide">
+                                подберет
+                                для
+                                вас
+                                пару или друзей
+                            </span> <span class="_anim-items _anim-no-hide">и организует встречу в безопасном
+                                месте</span>
+                        </div>
+                        <div class="revolutionary-dating__main-butons">
+                            <div class="revolutionary-dating__main-button-try _anim-items _anim-no-hide">
+                                <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg"
+                                        alt=""></button>
+                            </div>
+                            <div class="revolutionary-dating__main-work-note _anim-items _anim-no-hide">
+                                <button><span>Как это работает?</span> <img src="./img/icons/button-decor2.svg"
+                                        alt=""></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="revolutionary__dating-image">
+                <div class="revolutionary__dating-image _anim-items _anim-no-hide">
                     <img src="./img/revolutionary-dating/phone.webp" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Это старница с лицом, сзади тип должен пропадать через 4 секунды и должна оставаться одна маска  -->
-    <section class="find slide" data-slide-number="2">
+    <section class="revolutionary-dating__main-section slide">
+        <div class="_container">
+            <div class="revolutionary-dating__main">
+                <div class="revolutionary-dating__body">
+                    <div class="revolutionary-dating__main-title _anim-items _anim-no-hide">Революционный
+                        способ
+                        <span class="_anim-items _anim-no-hide">знакомств</span>
+                    </div>
+                    <div class="revolutionary-dating__main-sub-title">
+                        <span class="_anim-items _anim-no-hide">
+                            Искусственный
+                            интеллект бесплатно
+                        </span> <span class="_anim-items _anim-no-hide">
+                            подберет
+                            для
+                            вас
+                            пару или друзей
+                        </span> <span class="_anim-items _anim-no-hide">и организует встречу в безопасном
+                            месте</span>
+                    </div>
+                    <div class="revolutionary-dating__main-butons">
+                        <div class="revolutionary-dating__main-button-try _anim-items _anim-no-hide">
+                            <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg"
+                                    alt=""></button>
+                        </div>
+                        <div class="revolutionary-dating__main-work-note _anim-items _anim-no-hide">
+                            <button><span>Как это работает?</span> <img src="./img/icons/button-decor2.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="find slide slide2 " data-slide-number="2">
         <div class="_container">
             <div class="find__block">
                 <div class="find__main">
-                    <div class="find__title">Найти «своего»
-                        <span>человека</span>
+                    <div class="find__title global-title _anim-items _anim-no-hide">Найти «своего»
+                        <span class="_anim-items _anim-no-hide">человека</span>
                     </div>
-                    <div class="find__info">Вы считали, сколько времени и денег вы тратите, чтобы найти «своего»
-                        человека?<br><br>
+                    <div class="find__info _anim-items _anim-no-hide"><span>Вы считали, сколько времени и денег
+                            вы</span> <span>
+                            тратите,
+                            чтобы найти «своего»
+                            человека?
+                        </span><br><br>
 
-                        Сколько свиданий заканчивается глубокими отношениями? Пять? Десять? Больше?
-                        Каждое свидание — это несколько часов и тысячи рублей на подготовку, дорогу и
-                        общение.<br><br>
+                        <span>Сколько свиданий заканчивается глубокими</span> <span>отношениями? Пять? Десять?
+                            Больше?</span>
+                        <span>Каждое свидание — это несколько часов и</span> <span>тысячи рублей на подготовку, дорогу
+                            и</span>
+                        <span>общение.</span><br><br>
 
-                        Мы нашли решение, как при помощи искусственного интеллекта сделать так, чтобы вы нашли
-                        интересного вам человека сразу.
+                        <span class="find__info-span1">Мы нашли решение, как при помощи</span>
+                        <span class="find__info-span2">искусственного интеллекта сделать так,</span>
+                        <span class="find__info-span3">чтобы вы нашли интересного вам человека</span>
+                        <span class="find__info-span4">сразу.</span>
                     </div>
                 </div>
                 <div class="find__image">
-                    <div class="find__image1"><img src="./img/find/2.webp" alt="">
+                    <div class="find__image1"><img src="./img/find/2.webp" alt=""
+                            class="find__image1-img _anim-items _anim-no-hide">
                         <div class="find__image2"><img src="./img/find/1.webp" alt=""></div>
                     </div>
 
@@ -336,16 +403,18 @@
             </div>
         </div>
     </section>
-    <!-- Ооо, вот это один из главных пиздецов, нужно что бы телефон вылетал из края экрана и за ним появлялись различные декоративные элементы  -->
-    <section class="manual slide" data-slide-number="3">
+    <!--     <section class="manual slide slide3 " data-slide-number="3">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
-                    <div class="manual__title">Как все это
-                        <span>работает</span>
+                    <div class="manual__title global-title _anim-items _anim-no-hide">Как все это
+                        <span class="_anim-items _anim-no-hide">работает</span>
                     </div>
-                    <div class="manual__info">Давайте я расскажу вам, как искусственный интеллект Айри находит
-                        людей, с которыми вам будет интересно и делает первое свидание безопасным</div>
+                    <div class="manual__info _anim-items _anim-no-hide"><span>Давайте я расскажу вам, как
+                            искусственный</span><span>
+                            интеллект Айри находит
+                            людей, с которыми
+                        </span> <span>вам будет интересно и делает первое</span> <span>свидание безопасным</span></div>
                     <div class="revolutionary-dating__main-button-try button__none">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
@@ -357,83 +426,99 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--     <section class="manual">
+    </section> -->
+    <section class="manual slide slide4" data-slide-number="4">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
-                    <div class="manual__title">Как все это
-                        <span>работает</span>
+                    <div class="manual__title global-title _anim-items _anim-no-hide">Как все это
+                        <span class="_anim-items _anim-no-hide">работает</span>
                     </div>
-                    <div class="manual__info">Пройдите психологический тест, разработанный учёными (желательно указать,
-                        какими именно, учреждение/институт/академия
-                        или направление исследований). Это займёт 10-20 минут.</div>
+                    <div class="manual__info _anim-items _anim-no-hide"><span>Давайте я расскажу вам, как
+                            искусственный</span><span>
+                            интеллект Айри находит
+                            людей, с которыми
+                        </span> <span>вам будет интересно и делает первое</span> <span>свидание безопасным</span></div>
                     <div class="revolutionary-dating__main-button-try button__none">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="manual__image manual__image-phone2">
+                <div class="manual__image manual__image-phone2 _anim-items _anim-no-hide">
                     <img src="./img/manual/phone2.webp" alt="">
-                    <div class="manual__image-phone2-buttons1"><img src="/img/manual/buttons1.webp" alt=""></div>
-                    <div class="manual__image-phone2-buttons2"><img src="/img/manual/buttons2.webp" alt=""></div>
+                    <div class="manual__image-phone2-buttons1 _anim-items _anim-no-hide"><img
+                            src="/img/manual/buttons1.webp" alt=""></div>
+                    <div class="manual__image-phone2-buttons2 _anim-items _anim-no-hide"><img
+                            src="/img/manual/buttons2.webp" alt=""></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="manual">
+    <section class="manual slide slide5" data-slide-number="5">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
-                    <div class="manual__title">Как все это
-                        <span>работает</span>
+                    <div class="manual__title global-title _anim-items _anim-no-hide">Как все это
+                        <span class="_anim-items _anim-no-hide">работает</span>
                     </div>
-                    <div class="manual__info">Искусственный интеллект Айри подберет для вас человека с похожими
-                        увлечениями, взглядами и подходящим характером. И
-                        предложит познакомиться в переписке, либо созвониться.</div>
+                    <div class="manual__info _anim-items _anim-no-hide"><span>Искусственный интеллект Айри
+                            подберет</span> <span>
+                            для вас человека с похожими
+                            увлечениями,
+                        </span> <span>взглядами и подходящим характером. И</span>
+                        <span>предложит познакомиться в переписке,</span> <span>либо созвониться.</span>
+                    </div>
                     <div class="revolutionary-dating__main-button-try button__none">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
-                <div class=" manual__image manual__image-phone3">
+                <div class=" manual__image manual__image-phone3 _anim-items _anim-no-hide">
                     <img src="./img/manual/phone3.webp" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section class="manual">
+    <section class="manual slide slide6" data-slide-number="6">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
-                    <div class="manual__title">Как все это
-                        <span>работает</span>
+                    <div class="manual__title global-title _anim-items _anim-no-hide">Как все это
+                        <span class="_anim-items _anim-no-hide">работает</span>
                     </div>
-                    <div class="manual__info">А ещё Айри предложит вам место для первой встречи и самостоятельно
-                        забронирует столик. Вы всегда можете дать обратную
-                        связь или даже вызвать помощь</div>
+                    <div class="manual__info _anim-items _anim-no-hide"><span>А ещё Айри предложит вам место
+                            для</span><span> первой встречи и самостоятельно</span>
+                        <span>забронирует столик. Вы всегда можете дать</span>
+                        <span>
+                            обратную
+                            связь или даже вызвать помощь
+                        </span>
+                    </div>
                     <div class="revolutionary-dating__main-button-try button__none">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="manual__image manual__image-phone4">
+                <div class="manual__image manual__image-phone4 _anim-items _anim-no-hide">
                     <img src="./img/manual/phone4.webp" alt="">
                     <div class="manual__image-phone4-fone"><img src="/img/manual/fone-phone4.webp" alt=""></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="manual manual__black">
+    <section class="manual manual__black slide slide7" data-slide-number="7">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
-                    <div class="manual__title-white">Как все это
+                    <div class="manual__title">Как все это
                         <span>работает</span>
                     </div>
-                    <div class="manual__info-white">А после встречи попросит поделиться впечатлением</div>
+                    <div class="manual__info wh _anim-items _anim-no-hide"><span>А после встречи попросит
+                            поделиться</span>
+                        <span>впечатлением</span>
+                    </div>
                     <div class="revolutionary-dating__main-button-try button__none">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="manual__image manual__image-phone5">
+                <div class="manual__image manual__image-phone5 _anim-items _anim-no-hide">
                     <img src="./img/manual/phone5.webp" alt="">
                     <div class="manual__image-phone5-fone1"><img src="/img/manual/phone5-fone1.webp" alt=""></div>
                     <div class="manual__image-phone5-fone2"><img src="/img/manual/phone5-fone2.webp" alt=""></div>
@@ -441,27 +526,31 @@
             </div>
         </div>
     </section>
-    <section class="manual">
+    <section class="manual slide slide8" data-slide-number="8">
         <div class="_container">
             <div class="manual__block">
                 <div class="manual__main">
-                    <div class="manual__title">Как все это
-                        <span>работает</span>
+                    <div class="manual__title global-title _anim-items _anim-no-hide">Как все это
+                        <span class="_anim-items _anim-no-hide">работает</span>
                     </div>
-                    <div class="manual__info">Давайте я расскажу вам, как искусственный интеллект Айри находит
-                        людей, с которыми вам будет интересно и делает первое свидание безопасным</div>
+                    <div class="manual__info _anim-items _anim-no-hide"><span>Давайте я расскажу вам, как
+                            искусственный</span>
+                        <span>
+                            интеллект Айри находит
+                            людей, с которыми
+                        </span> <span>вам будет интересно и делает первое</span> <span>свидание безопасным</span>
+                    </div>
                     <div class="revolutionary-dating__main-button-try button__none">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="manual__image manual__image-phone6">
+                <div class="manual__image manual__image-phone6 _anim-items _anim-no-hide">
                     <img src="/img/manual/phone6.webp" alt="">
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- Это старницы с мероприятиями их 4, адаптив у них полностью сделан, нужно лишь добавить в адаптиве в конце блок текстом  -->
-    <section class="activated slide" data-slide-number="4">
+    </section>
+    <section class="activated slide slide9" data-slide-number="9">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -485,7 +574,7 @@
 
         </div>
     </section>
-    <!--     <section class="activated">
+    <section class="activated slide slide10" data-slide-number="10">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -494,20 +583,22 @@
                         на разные мероприятия по выбранным интересам: на
                         концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и
                         многое другое</div>
-                    <div class="revolutionary-dating__main-button-try">
+                    <div class="revolutionary-dating__main-button-try two">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="activated__img">
+                    <div class="activated__main-title lock">Больше <span>активности</span></div>
+                    <div class="activated__creative-title">Творческие мероприятия</div>
+                    <img src="/img/actived/actived2.webp" alt="">
+                </div>
             </div>
         </div>
-        <div class="activated__backround2">
-            <div class="activated__creative-title">Познавательные
-                мероприятия
-            </div>
-            <img src="/img/actived/actived2.webp" alt="">
+        <div class="activated__back green">
+
         </div>
     </section>
-    <section class="activated">
+    <section class="activated slide slide11" data-slide-number="11">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -516,20 +607,22 @@
                         на разные мероприятия по выбранным интересам: на
                         концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и
                         многое другое</div>
-                    <div class="revolutionary-dating__main-button-try">
+                    <div class="revolutionary-dating__main-button-try two">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="activated__img">
+                    <div class="activated__main-title lock">Больше <span>активности</span></div>
+                    <div class="activated__creative-title">Творческие мероприятия</div>
+                    <img src="/img/actived/actived3.webp" alt="">
+                </div>
             </div>
         </div>
-        <div class="activated__backround3">
-            <div class="activated__creative-title">Спортивные
-                мероприятия
-            </div>
-            <img src="/img/actived/actived3.webp" alt="">
+        <div class="activated__back pink">
+
         </div>
     </section>
-    <section class="activated">
+    <section class="activated slide slide12" data-slide-number="12">
         <div class="_container">
             <div class="activated__block">
                 <div class="activated__main">
@@ -538,20 +631,36 @@
                         на разные мероприятия по выбранным интересам: на
                         концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и
                         многое другое</div>
-                    <div class="revolutionary-dating__main-button-try">
+                    <div class="revolutionary-dating__main-button-try two">
                         <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
                     </div>
                 </div>
+                <div class="activated__img">
+                    <div class="activated__main-title lock">Больше <span>активности</span></div>
+                    <div class="activated__creative-title">Творческие мероприятия</div>
+                    <img src="/img/actived/actived4.webp" alt="">
+                </div>
             </div>
         </div>
-        <div class="activated__backround4">
-            <div class="activated__creative-title">Светские
-                вечера</div>
-            <img src="/img/actived/actived4.webp" alt="">
+        <div class="activated__back red">
+
         </div>
-    </section> -->
-    <!-- Это страница с прайсами тут нужно доработать border-radius и разделить на 3 блока при адаптиве -->
-    <section class="economy slide" data-slide-number="5">
+    </section>
+    <section class="activated__maim-section slide">
+        <div class="_container">
+            <div class="activated__main">
+                <div class="activated__main-title">Больше <span>активности</span></div>
+                <div class="activated__main-info">Пройдя тесты ты можешь не только знакомиться с людьми, но и ходить
+                    на разные мероприятия по выбранным интересам: на
+                    концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и
+                    многое другое</div>
+                <div class="revolutionary-dating__main-button-try two">
+                    <button><span>Хочу попробовать</span> <img src="./img/icons/button-decor1.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="economy slide slide13" data-slide-number="13">
         <div class="_container">
             <div class="economy__block">
                 <div class="economy__main">
@@ -579,18 +688,18 @@
                             <div class="economy__content-sub-title">Сэкономьте до 30% <br>
                                 при переходе на этот тариф</div>
                         </div>
-                        <div class="economy__content-price-1mouth">
+                        <button class="economy__content-price-1mouth economy-btn active">
                             <div class="economy__content-price-title">1 месяц</div>
                             <div class="economy__content-price-cost">700 ₽</div>
-                        </div>
-                        <div class="economy__content-price-6mouth">
+                        </button>
+                        <button class="economy__content-price-6mouth economy-btn">
                             <div class="economy__content-price-info">
                                 <div class="economy__content-price-title">6 месяцев</div>
                                 <div class="economy__content-price-sub-title">560 ₽ / месяц — экономия 20%</div>
                             </div>
                             <div class="economy__content-price-cost">3360 ₽</div>
-                        </div>
-                        <div class="economy__content-price-1year">
+                        </button>
+                        <button class="economy__content-price-1year economy-btn">
                             <div class="economy__content-price-info">
                                 <div class="economy__content-price-title">1 год</div>
                                 <div class="economy__content-price-sub-title">490 ₽ / месяц — экономия 30%</div>
@@ -599,7 +708,7 @@
                                 <div class="economy__content-price-cost">5880 ₽</div>
                                 <div class="economy__content-price-cost-fake">8400 ₽</div>
                             </div>
-                        </div>
+                        </button>
                         <div class="economy__content-choice">
                             <button>Выбрать тариф</button>
                         </div>
@@ -611,8 +720,59 @@
             <img src="./img/economy.webp" alt="">
         </div>
     </section>
-    <!-- Это последний блок с ним ничего делать не нужно -->
-    <section class="search slide" data-slide-number="6">
+    <section class="economy__body-section slide ">
+        <div class="_container">
+            <div class="economy__body">
+                <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
+                <div class="economy__content-sub-title">Сэкономьте до 30% <br>
+                    при переходе на этот тариф</div>
+                <div class="economy__content-punkt">
+                    <ul>
+                        <li><img src="/img/icons/chek.webp" alt="">Пробный период 1 месяц бесплатно</li>
+                        <li><img src="/img/icons/chek.webp" alt="">Находите людей со 100% совместимостью</li>
+                        <li><img src="/img/icons/chek.webp" alt="">Запретите видеться себя геолокации</li>
+                        <li><img src="/img/icons/chek.webp" alt="">Скройтесь ото всех</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="economy__price-section slide">
+        <div class="_container">
+            <div class="economy__content-price">
+                <div class="economy__mobile-title">
+                    <div class="economy__content-title">Обычный <img src="/img/icons/plus.webp" alt=""></div>
+                    <div class="economy__content-sub-title">Сэкономьте до 30% <br>
+                        при переходе на этот тариф</div>
+                </div>
+                <div class="economy__content-price-1mouth">
+                    <div class="economy__content-price-title">1 месяц</div>
+                    <div class="economy__content-price-cost">700 ₽</div>
+                </div>
+                <div class="economy__content-price-6mouth">
+                    <div class="economy__content-price-info">
+                        <div class="economy__content-price-title">6 месяцев</div>
+                        <div class="economy__content-price-sub-title">560 ₽ / месяц — экономия 20%</div>
+                    </div>
+                    <div class="economy__content-price-cost">3360 ₽</div>
+                </div>
+                <div class="economy__content-price-1year">
+                    <div class="economy__content-price-info">
+                        <div class="economy__content-price-title">1 год</div>
+                        <div class="economy__content-price-sub-title">490 ₽ / месяц — экономия 30%</div>
+                    </div>
+                    <div class="economy__content-price-fake">
+                        <div class="economy__content-price-cost">5880 ₽</div>
+                        <div class="economy__content-price-cost-fake">8400 ₽</div>
+                    </div>
+                </div>
+                <div class="economy__content-choice">
+                    <button>Выбрать тариф</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="search slide slide14" data-slide-number="14">
         <div class="_container">
             <div class="search__block">
                 <div class="search__title">
@@ -629,11 +789,13 @@
             <img src="/img/search__fone.webp" alt="">
         </div>
     </section>
-    <!-- Это попапы для бургер меню -->
-    <!--     <section class="founder pup-up__menu">
+    <section class="founder popup pup-up__menu">
         <div class="founder__block">
             <div class="founder__image">
                 <img src="/img/header__points/founder-main.webp" alt="">
+                <div class="news__active-close close pup-up__close"><button><img src="/img/icons/close.svg"
+                            alt=""></button></div>
+
             </div>
             <div class="founder__content">
                 <div class="founder__title">Создатель проекта</div>
@@ -669,10 +831,13 @@
             </div>
         </div>
     </section>
-    <section class="user-agriment pup-up__menu">
+    <section class="user-agriment popup pup-up__menu">
         <div class="user-agriment__block">
             <div class="user-agriment__content">
-                <div class="user-agriment__title">Пользовательское соглашение</div>
+                <div class="user-agriment__title">Пользовательское соглашение
+                    <div class="news__active-close close pup-up__close"><button><img src="/img/icons/close.svg"
+                                alt=""></button></div>
+                </div>
                 <div class="user-agriment__info"><span>1. Предмет Соглашения</span><br><br>
                     Настоящее Пользовательское соглашение (далее — «Соглашение») определяет условия использования
                     Интернет-сайта
@@ -724,8 +889,8 @@
                     требованиям действующего законодательства Российской Федерации для заключения настоящего Соглашения.
                     2.2. Для того чтобы начать использование Сайта Пользователь должен пройти процедуру регистрации и
                     тестирование на Сайте.
-                    Для регистрации Пользователь должен заполнить регистрационную анкету, размещенную по адресу
-                    <a href="https://aiyri.ru/profile">https://aiyri.ru/profile</a>
+                    Для регистрации Пользователь должен заполнить регистрационную анкету, размещенную по адресу<a
+                        href="https://aiyri.ru/profile">https://aiyri.ru/profile</a>
                     (далее — «Анкета») и произвести оплату. В процессе регистрации и тестирования Пользователь обязуется
                     предоставить
                     Администрации достоверную, полную и актуальную информацию о себе по вопросам, предлагаемым в Анкете
@@ -750,11 +915,11 @@
             </div>
         </div>
     </section>
-    <section class="news pup-up__menu">
+    <section class="news popup pup-up__menu">
         <div class="news__block">
             <div class="news__title-block">
                 <div class="news__title">Новости</div>
-                <div class="close"><button><img src="/img/icons/close.svg" alt=""></button></div>
+                <div class="close pup-up__close"><button><img src="/img/icons/close.svg" alt=""></button></div>
             </div>
             <div class="news__main">
                 <div class="news__main-block"><img src="img/header__points/tort.webp" alt="">
@@ -787,11 +952,12 @@
             </div>
         </div>
     </section>
-    <section class="news__active pup-up__menu">
+    <section class="news__active popup pup-up__menu">
         <div class="news__active-block">
             <div class="news__active-image">
                 <img src="img/header__points/tort.webp" alt="">
-                <div class="news__active-close close"><button><img src="/img/icons/close.svg" alt=""></button></div>
+                <div class="news__active-close pup-up__close close"><button><img src="/img/icons/close.svg"
+                            alt=""></button></div>
                 <div class="news__active-arrow"><button><img src="/img/icons/arrow-lelt.svg" alt=""></button></div>
             </div>
             <div class="news__active-main">
@@ -823,7 +989,274 @@
                     С уважением, Маринэ Багдасарян.</div>
             </div>
         </div>
-    </section> -->
+    </section>
+    <div class="pup-up__info pup-up__info-gender popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-title">Привет, это Айри</div>
+        <div class="pup-up__info-sub-title">Привет, это Айри) Мне нужно задать вам 5 вопросов, чтобы дать доступ к
+            анкетам, ок?</div><br>
+        <div class="pup-up__info-qestion">Расскажите, кто вы? </div>
+        <div class="pup-up__info-btn">
+            <div><button>Мужчина</button></div>
+            <div class="pup-up__info-line"></div>
+            <div><button>Женщина</button></div>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-hunt popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Кого хотите найти?</div>
+            <div class="pup-up__info-relationship"><img src="/img/icons/heart.webp" alt=""><span>Отношения</span><label
+                    class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="pup-up__info-friends"><img src="/img/icons/friend.webp" alt=""><span>Друзей</span><label
+                    class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-data popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Как вас зовут?</div>
+            <form>
+                <div class="pup-up__info-inp">
+                    Ваше имя
+                    <input type="text">
+                </div>
+            </form>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-happy popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Когда у вас день рождения?</div>
+            <form>
+                <div class="pup-up__info-inp">
+                    Выберите дату
+                    <input type="date">
+                </div>
+            </form>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-documents popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Важные документы</div>
+            <div class="pup-up__info-main">Нажимая «Продолжить» вы соглашаетесь на обработку персональных
+                данных, а также принимаете пользовательское соглашение:</div>
+            <div class="header__punkt-group3">
+                <div class="header__punkt-group3-user-agriment punkts">
+                    <button>
+                        <div class="header__punkt-content">
+                            <img src="/img/icons/user-agriment.webp" alt="">Пользовательское соглашение
+                        </div>
+                        <div class="header__punkt-arrow-right">
+                            <img src="/img/icons/arrow__right.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+                <div class="header__punkt-group3-protect punkts">
+                    <button>
+                        <div class="header__punkt-content">
+                            <img src="/img/icons/protect.webp" alt="">Обработка персональных данных
+                        </div>
+                        <div class="header__punkt-arrow-right">
+                            <img src="/img/icons/arrow__right.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <button class="pup-up__info-further">Продолжить</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-password popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Важные данные</div>
+            <div class="pup-up__info-main">Установите уникальный сложный пароль, используйте любую комбинацию
+                латинских букв, цифр и других символов</div>
+            <form>
+                <div class="pup-up__info-data">
+                    <div class="pup-up__info-inp">
+                        Ваша почта
+                        <input type="email">
+                    </div>
+                    <div class="pup-up__info-inp">
+                        Придумайте пароль
+                        <input type="password">
+                    </div>
+                    <div class="pup-up__info-inp">
+                        Повторите этот пароль
+                        <input type="password">
+                    </div>
+                </div>
+            </form>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-thanks popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Спасибо за регистрацию!</div>
+            <div class="pup-up__info-main">Мы отправили на указанную почту
+                dencreate@gmail.com ссылкe для
+                подтверждения аккаунта, просьба
+                пройти по нему и активировать
+                аккаунт</div>
+            <button class="pup-up__info-further">Отправить ещё раз</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-promocode popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-active"></div>
+            <div class="pup-up__info-point"></div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-title">Промокод</div>
+            <div class="pup-up__info-promo">
+                Самым избранным (никакой коррупции) мы с барского плеча подкидываем промод, прикиньте у вас сразу что то
+                да будет. Но это не точно!
+                <img src="/img/icons/promo.svg" alt="">
+            </div>
+            <form class="promo" action="">
+                <div class="pup-up__info-inp">
+                    Промокод (если есть)
+                    <input type="email">
+                </div>
+                <button class="pup-up__info-send">
+                    <img src="/img/icons/send.svg" alt="">
+                </button>
+            </form>
+            <button class="pup-up__info-further">Далее</button>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-sing  popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-title  pup-up__info-enter">Вход</div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-data">
+                <div class="pup-up__info-inp pup-up__info-email">
+                    <input type="email" placeholder="Ваша почта">
+                </div>
+                <div class="pup-up__info-inp pup-up__info-password">
+                    <input type="password" placeholder="Пароль">
+                </div>
+            </div>
+            <div class="pup-up__info-remember"><img src="/img/icons/heart.webp" alt=""><span>Запомнить на этом
+                    устройстве</span><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="pup-up__info-further">Войти</button>
+            <div class="pup-up__info-repair"><a href="#">Востановить пароль?</a></div>
+        </div>
+    </div>
+    <div class="pup-up__info pup-up__info-repair popup">
+        <div class="pup-up__info-points">
+            <div class="pup-up__info-title  pup-up__info-enter">Востановление пароля</div>
+            <div class="pup-up__info-point-close pup-up__close"><a href="#"><img src="/img/icons/close-pup.svg"
+                        alt=""></a></div>
+        </div>
+        <div class="pup-up__info-content">
+            <div class="pup-up__info-data">
+                <form>
+                    <div class="pup-up__info-inp">
+                        Ваша почта
+                        <input type="email">
+                    </div>
+                </form>
+            </div>
+            <button class="pup-up__info-further">Отправить письмо востановления</button>
+        </div>
+    </div>
 </main><footer class="footer theme">
     <div class="_container">
         <div class="footer__content">
@@ -832,10 +1265,12 @@
             <div class="footer__email">help@ayiri.ru</div>
         </div>
     </div>
-</footer>   </div>
+</footer>      </div>
+   </div>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+   <script src="/js/gsap.min.js"></script>
+   <script src="/js/ScrollTrigger.min.js"></script>
+   <script src="/js/ScrollSmoother.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
    <script src="/js/script-main.js"></script>
    <script src="/js/script.js"></script>

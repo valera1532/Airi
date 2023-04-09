@@ -1,45 +1,33 @@
-document.querySelector('.header__burger').addEventListener('click', function () {
+document.querySelector('.header__burger-body').addEventListener('click', function () {
    document.querySelector('.header__burger').classList.toggle('active');
    document.querySelector('.header-burger__block').classList.toggle('active');
 });
-document.addEventListener('DOMContentLoaded', function () {
-   // создаем timeline для анимации переключения между слайдами
-   const slideTimeline = gsap.timeline({
-      defaults: { duration: 1 },
-      paused: true,
+document.querySelector(".header__punkt-group1-founder").addEventListener("click", () => {
+   document.querySelector(".founder").classList.add("active");
+   document.querySelector('body').classList.add('lock');
+});
+document.querySelector(".header__punkt-group1-news").addEventListener("click", () => {
+   document.querySelector(".news").classList.add("active");
+   document.querySelector('body').classList.add('lock');
+});
+let userModal = document.querySelector(".user-agriment");
+let userBtn = document.querySelector(".header__punkt-group3-user-agriment");
+userBtn.addEventListener("click", () => userModal.classList.add("active"));
+let popupClose = document.querySelectorAll(".pup-up__close");
+for (let i = 0; i < popupClose.length; i++) {
+   popupClose[i].addEventListener("click", () => {
+      popupClose[i].closest(".popup").classList.remove("active");
+      document.querySelector('body').classList.remove('lock');
    });
+}
+let headerLinks = document.querySelectorAll(".punkts");
+for (let i = 0; i < headerLinks.length; i++) {
+   headerLinks[i].addEventListener("click", () => {
+      document.querySelector('.header__burger').classList.remove('active');
+      document.querySelector('.header-burger__block').classList.remove('active');
+   }
+   )
+}
 
-   // добавляем анимацию для каждого слайда
-   slideTimeline
-      .to('.slide1', { opacity: 0, y: '-100%' })
-      .to('.slide2', { opacity: 1, y: '0%' })
-      .to('.slide2', { opacity: 0, y: '-100%' })
-      .to('.slide3', { opacity: 1, y: '0%' });
 
-   // устанавливаем начальный слайд и запускаем timeline
-   let currentSlide = 1;
-   slideTimeline.progress(0);
-   slideTimeline.play();
 
-   // создаем ScrollTrigger для каждого слайда
-   gsap.utils.toArray('.slide').forEach((slide, index) => {
-      const trigger = index === 0 ? slide : gsap.utils.toArray('.slide')[index - 1];
-
-      ScrollTrigger.create({
-         trigger: trigger,
-         start: 'top center',
-         end: 'bottom center',
-         onEnter: () => {
-            // определяем, какой слайд должен стать активным
-            const slideNumber = parseInt(slide.dataset.slideNumber);
-
-            // если активный слайд не изменился, пропускаем анимацию
-            if (slideNumber === currentSlide) return;
-
-            // обновляем текущий слайд и запускаем timeline
-            currentSlide = slideNumber;
-            slideTimeline.progress(currentSlide - 1).play();
-         },
-      });
-   });
-})
