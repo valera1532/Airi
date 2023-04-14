@@ -1,6 +1,87 @@
+/*------------------------------Слайдер  НАЧАЛО------------------------------------------*/
+const mySwiperSubMain = new Swiper('.manual__slider', {
+    /*     loop: true, */
+    slidesPerView: 1,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+    },
+    slideToClickedSlide: true,
+    spaceBetween: 500,
+    slidesPerGroup: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+});
+/*------------------------------Слайдер  КОНЕЦ------------------------------------------*/
+/*------------------------------ЗУМ на главном экране  НАЧАЛО---------------------------*/
+setTimeout(() => {
+    document.querySelector('.revolutionary__dating-image').classList.add('_active');
+}, 1000);
+/*------------------------------ЗУМ на главном экране  КОНЕЦ---------------------------*/
+/*--------------Открытие поп-апа при нажатии на кнопки красные  НАЧАЛО-----------------*/
+let btnsSignUp = document.querySelectorAll('.revolutionary-dating__main-button-try');
+for (let i = 0; i < btnsSignUp.length; i++) {
+    btnsSignUp[i].addEventListener('click', () => {
+        document.querySelector(".pup-up__info-gender").classList.add("active");
+        document.querySelector("body").classList.add("lock");
+    });
+};
+/*--------------Открытие поп-апа при нажатии на кнопки красные  КОНЕЦ-----------------*/
+/*---------------------При смене слайда менять цвет шапки НАЧАЛО----------------------*/
+mySwiperSubMain.on('slideChange', function () {
+    setTimeout(() => {
+        if (document.querySelector('.manual-black').classList.contains('swiper-slide-active')) {
+            document.querySelector('.manual').classList.add('black');
+            document.querySelector('.header').classList.add('whiteL');
+            document.querySelector('.header').classList.add('white');
+            setTimeout(() => {
+                document.querySelector('.manual').classList.add('black-back');
+            }, 400);
+        } else {
+            document.querySelector('.manual').classList.remove('black');
+            document.querySelector('.manual').classList.remove('black-back');
+            document.querySelector('.header').classList.remove('whiteL');
+            document.querySelector('.header').classList.remove('white');
+        }
+    }, 100);
+})
+/*---------------------При смене слайда менять цвет шапки КОНЕЦ----------------------*/
+/* Стоп автоплея слайдера при загрузке страницы */
+mySwiperSubMain.autoplay.stop();
+/* старт когда доскролим до автоплея слайдера*/
+window.addEventListener('scroll', () => {
+    const heightViewport = window.screen.availHeight;
+    const scrollPosition = window.scrollY;
+    if ((heightViewport * 1.8) <= scrollPosition) {
+        mySwiperSubMain.autoplay.start()
+    }
+});
+/* Создание второго слайдера только при экраннах выше 992 пикселя */
+if (window.innerWidth > 992) {
+    const mySwiperSubMain2 = new Swiper('.economy-section__slider', {
+        /*     loop: true, */
+        slidesPerView: 1,
+        speed: 1000,
+        autoplay: {
+            delay: 3000,
+        },
+        slideToClickedSlide: true,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.swiper-pagination2',
+            type: 'bullets',
+            clickable: true,
+        },
+    });
+}
+
 /*------------------------------Анимация кругов первый экран  НАЧАЛО------------------------------------------*/
 const circleContainer = document.getElementById('circle-container');
-const maxCircleSize = 150; // максимальный размер круга
+let maxCircleSize = 150; // максимальный размер круга
 const maxCircles = 2; // максимальное количество кругов
 const imagePath = 'img/circles/'; // путь к папке с изображениями
 const imageCount = 5; // количество доступных изображений
@@ -41,7 +122,7 @@ function generateCircle() {
                 circleContainer.removeChild(circle);
                 circlesCount--;
             }, 3000);
-        }, 3000);
+        }, 2500);
     }
 }
 
@@ -50,6 +131,7 @@ setTimeout(() => {
         generateCircle();
     }, 500);
 }, 2000);
+
 /*--------------------------Анимация кругов первый экран  КОНЕЦ-------------------------------*/
 /*-------------------Анимация текста/блоков/картинок и т.д. НАЧАЛО----------------------------*/
 
@@ -102,34 +184,55 @@ function changeSlide() {
     const scrollPosition = window.scrollY;
     const header = document.querySelector('.header');
     /*     console.log(scrollPosition); */
-    if (((heightViewport - 50) <= scrollPosition) && ((heightViewport * 1.8) >= scrollPosition)) {
-        header.classList.add('white');
-    } else if ((heightViewport * 1.8) <= scrollPosition && (heightViewport * 5) >= scrollPosition) {
-        header.classList.remove('white');
-        header.classList.remove('whiteL');
-    } else if ((heightViewport) >= scrollPosition) {
-        header.classList.remove('white');
-        header.classList.remove('whiteL');
-    } else if (((heightViewport * 5) <= scrollPosition) && ((heightViewport * 6) >= scrollPosition)) {
-        header.classList.add('white');
-        header.classList.add('whiteL');
-        console.log(5555555555555);
-    } else if ((heightViewport * 6) <= scrollPosition && (heightViewport * 10.7) >= scrollPosition) {
-        header.classList.remove('white');
-        header.classList.remove('whiteL');
-    } else if (((heightViewport * 10.7) <= scrollPosition) && ((heightViewport * 11.7) >= scrollPosition)) {
-        header.classList.add('white');
+    if (window.innerWidth > 992) {
+        if (((heightViewport - 150) <= scrollPosition) && ((heightViewport * 1.7) >= scrollPosition)) {
+            header.classList.add('white');
+            header.classList.add('whiteL');
+        } else if ((heightViewport * 1.8) <= scrollPosition && (heightViewport * 7.2) >= scrollPosition) {
+            header.classList.remove('white');
+            header.classList.remove('whiteL');
+        } else if ((heightViewport) >= scrollPosition) {
+            header.classList.remove('white');
+            header.classList.remove('whiteL');
+        } else if (((heightViewport * 7.2) <= scrollPosition) && ((heightViewport * 8) >= scrollPosition)) {
+            header.classList.add('white');
+            header.classList.add('whiteL');
+        }
+    } else {
+        if (((heightViewport * 1.95) <= scrollPosition) && ((heightViewport * 2.7) >= scrollPosition)) {
+            header.classList.add('white');
+        } else if ((heightViewport * 2.95) <= scrollPosition && (heightViewport * 11.95) >= scrollPosition) {
+            header.classList.remove('white');
+            header.classList.remove('whiteL');
+        } else if ((heightViewport * 2) >= scrollPosition) {
+            header.classList.remove('white');
+            header.classList.remove('whiteL');
+        } else if (((heightViewport * 11.95) <= scrollPosition) && ((heightViewport * 13) >= scrollPosition)) {
+            header.classList.add('white');
+            header.classList.add('whiteL');
+        }
     }
 }
 window.addEventListener('scroll', () => {
     changeSlide()
 });
-
+let arrowsDown = document.querySelectorAll('.arrow-down');
+for (let i = 0; i < arrowsDown.length; i++) {
+    arrowsDown[i].addEventListener('click', () => {
+        window.scroll({
+            left: 0,
+            top: (window.scrollY + window.innerHeight),
+            behavior: 'smooth',
+        });
+        console.log(window.scrollY);
+        console.log(window.innerHeight);
+        console.log(window.scrollY + window.innerHeight);
+        console.log(document.querySelector('.slide').clientHeight);
+    });
+};
 
 /*-----------------------------Редактирование Header КОНЕЦ----------------------------------*/
-/*--------------------------------------НАРАБОТКИ-------------------------------------------*/
-/*--------------------------------------НАРАБОТКИ-------------------------------------------*/
-/*--------------------------------------НАРАБОТКИ-------------------------------------------*/
+/*----------------------Смена выбранной кнопки на тарифах НАЧАЛО----------------------------*/
 let tarifBtns = document.querySelectorAll('.economy-btn');
 for (let i = 0; i < tarifBtns.length; i++) {
     tarifBtns[i].addEventListener('click', () => {
@@ -139,126 +242,156 @@ for (let i = 0; i < tarifBtns.length; i++) {
         tarifBtns[i].classList.add('active')
     });
 };
+/*----------------------Смена выбранной кнопки на тарифах КОНЕЦ----------------------------*/
+/*-------------------------------Скролл вправо НАЧАЛО--------------------------------------*/
 
 
-/* gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollSmoother.create({
-   wrapper: '.wrapper__container',
-   content: '.wrapper',
-}); */
-/* window.addEventListener('scroll', e => {
-   document.body.style.cssText += `--scrollTop: ${window.scrollY}px`
-}); */
-/* const firstBlock = document.querySelector('.slide3');
-const secondBlock = document.querySelector('.slide4');
-const secondBlockTwo = document.querySelector('.slide5');
-function changeNextSlide(elPrev, elNext, nameVariable) {
-   var lastScroll = 0;
-   window.addEventListener('scroll', () => {
-       const firstBlockCoords = elPrev.getBoundingClientRect();
-       const secondBlockCoords = elNext.getBoundingClientRect();
-       if (firstBlockCoords.bottom <= window.innerHeight && secondBlockCoords.top >= 0) {
-           if (lastScroll == 0) lastScroll = window.scrollY;
-           elNext.classList.add('active')
-       } else if (firstBlockCoords.top > window.scrollY) {
-           elNext.classList.remove('active')
-       }
-       function changeScrollTwo() {
-           return window.scrollY - lastScroll;
-       }
-       changeScrollTwo()
-       elNext.style.cssText += `--${nameVariable}: ${changeScrollTwo()}px`
-   });
-} */
-/* function offset(el) {
-   var rect = el.getBoundingClientRect(),
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-} */
 
-/* function changeSlide(prevEl, nextEl, nameVariable) {
-   const prevBlock = prevEl.getBoundingClientRect();
-   const nextBlock = nextEl.getBoundingClientRect();
-   const prevElTop = prevEl.offsetTop;
-   const prevElHeight = prevEl.clientHeight;
-   console.log(prevEl.offsetTop);
-   console.log(prevEl.clientHeight);
-   window.addEventListener('scroll', () => {
-       const scrollPosition = window.scrollY;
-       console.log(scrollPosition);
-       if (scrollPosition >= prevElTop && scrollPosition >= prevElTop + prevElHeight && scrollPosition < prevElTop + prevElHeight * 2) {
-           console.log(11111111);
-           prevEl.style.cssText += `position: fixed;`;
-           document.querySelector('.wrapper').style.cssText += `margin-top: ${prevElHeight};`;
-       }
-   })
+// Для начала посмотри на этот код, пойми суть. 
+window.addEventListener('scroll', () => {
+
+    const mainTop = window.scrollY;
+
+    const mainViewport = window.innerHeight;
+
+    const mainWidth = window.innerWidth;
+
+    let mainScroll = mainTop - (mainViewport * 2);
+
+    const slideManual = document.querySelectorAll('.div');
+
+    let maxScroll22 = mainWidth * (slideManual.length - 2);
+
+    document.querySelector('.manual').style.minHeight = `${maxScroll22}px `;
+
+    console.log(mainScroll);/* 6937 */ /* 7095 */
+    console.log(maxScroll22);/* 8565 */ /* 8565 */
+    console.log(mainWidth);/* 1713 */ /* 1713 */ /* 6854 */
+
+    if (mainScroll >= (maxScroll22/*  - mainWidth * 0.5 */)) {
+        mainScroll = (maxScroll22/*  - mainWidth * 0.5 */);
+    } else if (mainViewport * 2 < mainTop) {
+        document.querySelector('.div__block').style.marginLeft = `${-mainScroll}px`;
+    };
+
+    const progressBars = document.querySelectorAll('.manual__item-progress');
+
+    let curentSlide = Math.ceil((mainScroll + (mainWidth / 2)) / mainWidth);
+
+    console.log(curentSlide);
+
+    if (curentSlide > 0) {
+        for (let i = 0; i < progressBars.length; i++) {
+            progressBars[i].classList.remove('active');
+            progressBars[curentSlide - 1].classList.add('active');
+            progressBars[i].addEventListener('click', () => {
+                nextScroll = ((curentSlide * mainWidth)) + (mainViewport * 2);
+                window.scroll({
+                    left: 0,
+                    top: nextScroll,
+                    behavior: 'smooth',
+                });
+            });
+        };
+    };
+});
+
+
+
+
+
+
+/*-------------------------------Скролл вправо КОНЕЦ--------------------------------------*/
+
+/*--------------------------Автоматическая печать текста НАЧАЛО----------------------------*/
+var CharTimeout = 70; // скорость печатания
+var StoryTimeout = 1500; // время ожидания перед переключением
+
+var Summaries = new Array();
+var SiteLinks = new Array();
+
+Summaries[0] = "Знакомств";
+Summaries[1] = "Встреч";
+Summaries[2] = "Поиска";
+Summaries[3] = "Общения";
+Summaries[4] = "Веселья";
+
+var myTimeoutId;
+
+function startTicker(name) {
+    massiveItemCount = Number(Summaries.length);
+    CurrentStory = -1;
+    CurrentLength = 0;
+    AnchorObject = document.getElementById(name);
+    console.log(AnchorObject);
+    runTheTicker();
 }
-changeSlide(document.querySelector('.slide1'), document.querySelector('.slide2'), "scrollTopTwo"); */
-/* changeNextSlide(firstBlock, secondBlock, "scrollTopTwo"); */
-/* changeNextSlide(document.querySelector('.slide4'), document.querySelector('.slide5'), "scrollTopFour"); */
-/* changeNextSlide(document.querySelector('.slide5'), document.querySelector('.slide6'), "scrollTopThree"); */
-/* function changeSlide(slide, nextSlide, nameVariable) {
-   window.addEventListener('scroll', () => {
-   });
-}; */
-/* function changeSlide() {
-   const heightViewport = window.screen.availHeight;
-   const scrollPosition = window.scrollY;
-   console.log(heightViewport);
-   console.log(scrollPosition);
-   if ((heightViewport * 3) <= scrollPosition) { */
-/*         document.querySelector('body').classList.add('lock');
-        window.scroll({
-            left: 0,
-            top: (heightViewport * 3),
-            behavior: 'auto',
-        }); */
-/*   disableScroll() */
-/*    }
-} */
-/* window.addEventListener('scroll', () => {
-   changeSlide()
-   const firstBlockCoords = document.querySelector('.slide3').getBoundingClientRect();
-   const secondBlockCoords = document.querySelector('.slide4').getBoundingClientRect();
-   if (firstBlockCoords.bottom <= window.innerHeight && secondBlockCoords.top >= 0) {
-   } else if (firstBlockCoords.top > window.scrollY) {
 
-   }
-}); */
+function runTheTicker() {
+    if (myTimeoutId) {
+        clearTimeout(myTimeoutId);
+    }
 
-
-/* var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-function preventDefault(e) {
-   e.preventDefault();
+    if (CurrentLength == 0) {
+        CurrentStory++;
+        CurrentStory = CurrentStory % massiveItemCount;
+        StorySummary = Summaries[CurrentStory].replace(/"/g, "-");
+    }
+    AnchorObject.innerHTML = StorySummary.substring(0, CurrentLength) + znak();
+    if (CurrentLength != StorySummary.length) {
+        CurrentLength++;
+        myTimeout = CharTimeout;
+    } else {
+        CurrentLength = 0;
+        myTimeout = StoryTimeout;
+    }
+    myTimeoutId = setTimeout(runTheTicker, myTimeout);
 }
-function preventDefaultForScrollKeys(e) {
-   if (keys[e.keyCode]) {
-       preventDefault(e);
-       return false;
-   }
-}
-var supportsPassive = false;
-try {
-   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-       get: function () { supportsPassive = true; }
-   }));
-} catch (e) { }
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-function disableScroll() {
-   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-   window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-}
-function enableScroll() {
-   window.removeEventListener('DOMMouseScroll', preventDefault, false);
-   window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-   window.removeEventListener('touchmove', preventDefault, wheelOpt);
-   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-}
-*/
 
+function znak() {
+    if (CurrentLength == StorySummary.length) return "";
+    else return "";
+}
 
+startTicker('Ticker');
+/*--------------------------Автоматическая печать текста КОНЕЦ----------------------------*/
+
+/*--------------------------------открытие поп-апа НАЧАЛО---------------------------------*/
+document.querySelector(".pup-up__info-repair").addEventListener("click", () => {
+    document.querySelector(".pup-up__info-repair-block").classList.add("active");
+    document.querySelector("body").classList.add("lock");
+});
+/*--------------------------------открытие поп-апа КОНЕЦ---------------------------------*/
+/*----------------------------открытие датапикера НАЧАЛО---------------------------------*/
+$(document).ready(function () {
+    $(".calendar-btn").click(function () {
+        $(".datepicker-here").datepicker().data("datepicker").show();
+    });
+});
+
+$(document).ready(function () {
+    $(".datepicker-here").datepicker();
+    $(".calendar-btn").click(function (event) {
+        event.preventDefault();
+    });
+});
+/*----------------------------открытие датапикера КОНЕЦ---------------------------------*/
+let inputDate = document.querySelector(".datepicker-here");
+inputDate.addEventListener("click", () => {
+    if (!document.querySelector(".datepicker__btn")) {
+        document.querySelector(".datepicker--content").insertAdjacentHTML(
+            "afterend",
+            `
+       <button class="datepicker__btn">
+         Выбрать
+       </butoon>
+    `
+        );
+    }
+    setTimeout(() => {
+        document.querySelector(".datepicker__btn").addEventListener("click", () => {
+            document.querySelector(".datepicker").remove();
+        });
+    }, 200);
+});
